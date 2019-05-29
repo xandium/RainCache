@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 let EventEmitter;
 try {
-    EventEmitter = require('eventemiiter3');
+  EventEmitter = require("eventemiiter3");
 } catch (e) {
-    EventEmitter = require('events').EventEmitter;
+  EventEmitter = require("events").EventEmitter;
 }
 
 /**
@@ -12,18 +12,18 @@ try {
  * @private
  */
 class BaseConnector extends EventEmitter {
-    /**
-     * @private
-     */
-    constructor() {
-        super();
-        this.ready = false;
-    }
+  /**
+   * @private
+   */
+  constructor() {
+    super();
+    this.ready = false;
+  }
 
-    initialize() {
-        this.ready = true;
-        return Promise.resolve();
-    }
+  initialize() {
+    this.ready = true;
+    return Promise.resolve();
+  }
 }
 
 module.exports = BaseConnector;

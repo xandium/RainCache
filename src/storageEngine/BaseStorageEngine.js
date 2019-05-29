@@ -1,56 +1,38 @@
-'use strict';
+"use strict";
 
 /**
  * Base Storage engine class defining the methods being used by RainCache that a storage engine is supposed to have
  * @private
  */
 class BaseStorageEngine {
-    /**
-     * @private
-     */
-    constructor() {
-        this.ready = true;
-    }
+  /**
+   * @private
+   */
+  constructor() {
+    this.ready = true;
+  }
 
-    initialize() {
-        // Initializes the engine, e.g. db connection, etc..
-    }
+  initialize() {
+    // Initializes the engine, e.g. db connection, etc..
+  }
 
-    get(id) {
+  get(id) {}
 
-    }
+  upsert(id, data) {}
 
-    upsert(id, data) {
+  remove(id) {}
 
-    }
+  getListMembers(listid) {}
 
-    remove(id) {
+  addToList(listId, ids) {}
 
-    }
+  isListMember(listId, id) {}
 
-    getListMembers(listid) {
+  removeFromList(listId, id) {}
 
-    }
+  removeList(listId) {}
 
-    addToList(listId, ids) {
-
-    }
-
-    isListMember(listId, id) {
-
-    }
-
-    removeFromList(listId, id) {
-
-    }
-
-    removeList(listId) {
-
-    }
-
-    getListCount(listId) {
-
-    }
+  getListCount(listId) {}
 }
 
 module.exports = BaseStorageEngine;

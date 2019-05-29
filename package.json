@@ -1,5 +1,5 @@
 {
-  "name": "raincache",
+  "name": "@xandium/raincache",
   "version": "0.4.1",
   "description": "A pluggable discord cache worker",
   "main": "index.js",
@@ -14,10 +14,11 @@
     "redis": "^2.8.0"
   },
   "dependencies": {
+    "@xandium/stargear": "^0.2.0",
     "tsubaki": "^1.2.0"
   },
   "devDependencies": {
-    "eslint": "^4.4.1",
-    "docma": "^1.5.1"
+    "docma": "^1.5.1",
+    "eslint": "^4.4.1"
   }
 }
