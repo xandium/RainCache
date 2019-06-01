@@ -36,8 +36,7 @@ class AmqpConnector extends BaseConnector {
     this.channel = await this.client.createChannel();
     this.ready = true;
     this.channel.assertQueue(this.options.amqpQueue, {
-      durable: false,
-      autoDelete: true
+      durable: true
     });
     this.channel.consume(this.options.amqpQueue, event => {
       this.channel.ack(event);
