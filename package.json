@@ -8,13 +8,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "wolke <wolke@weeb.sh>",
+  "contributors": [
+    "Sharon Williams <swilliams@xandium.io> (https://xandium.io)"
+  ],
   "license": "MIT",
   "optionalDependencies": {
     "amqplib": "^0.5.2",
     "redis": "^2.8.0"
   },
   "dependencies": {
-    "@xandium/stargear": "^0.2.0",
+    "@xandium/stargear": "git+ssh://git@github.com/xandium/stargear",
     "tsubaki": "^1.2.0"
   },
   "devDependencies": {
