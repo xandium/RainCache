@@ -17,7 +17,7 @@
     "redis": "^2.8.0"
   },
   "dependencies": {
-    "@xandium/stargear": "git+ssh://git@github.com/xandium/stargear",
+    "@xandium/stargear": "git+https://github.com/xandium/stargear",
     "tsubaki": "^1.2.0"
   },
   "devDependencies": {
